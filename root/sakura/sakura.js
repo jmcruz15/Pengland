@@ -1,4 +1,4 @@
-
+// sketch inspired by natalieyeye's SAKURA BLOSSOM
 var organics = [];
 var change, colorsPalette;
 
