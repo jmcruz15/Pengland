@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1,">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="root\snowflakes\snowflakes.js"></script>
+
+   
+    
+ <style>
+.igloo {
+  width: 500px;
+  height: 310px;
+  background: url("img/IMG_1302.png") no-repeat;
+  transition: 400ms;
+    } 
+.igloo:hover {
+   background: url("img/IMG_1301.png") no-repeat;
+   transform: scale(1.03);
+}
+.background {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 300vw;
+}
+
+.ice {
+  background-color: #b0cbf6;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 5vh;
+  width: 300vw;
+}
+
+.water {
+  background-color: #7394c9;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 15vh;
+  width: 300vw;
+}
+
+.scrollbar-delete::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+  font-family: nohemi;
+  src: url(fonts/Nohemi-Regular-BF6438cc4d0e493.ttf);
+} 
+
+@font-face {
+  font-family: pingsan;
+  src: url(fonts/Pingsan.ttf);
+} 
+
+ </style>
+ <script src="snowflakes.js"></script>
+</head>
+
+<body>
+  <style>
+    body{
+  cursor: url(img/IMG_1305.png), auto;
+  margin: 0%;
+  overflow-y: hidden;
+  background-color:#deeff5
+}
+
+   </style>
+  
+
+<div class="scrollbar-delete" style="margin-left: 8vh; height: fit-content; width: fit-content;">
+  <h1 style="position: fixed; margin-bottom: 0%; font-size: 10vh; color: #7394c9;font-family: pingsan;">Welcome to Pengland</h1>
+<p style=" position: sticky; text-align: top; font-size: 2vh; color: #c4c4c4; font-family: nohemi;">Scroll to the right to explore!!!</p>
+</div>
+
+<div>
+  <a href="wrongroom.html" class="igloo" 
+  style="position: absolute; bottom: 20vh; left: 50vw;">
+</a> 
+</div>
+
+<a href="room1.html" class="igloo"
+  style="position: absolute; bottom: 20vh; left: 100vw;"></a> 
+
+
+<a href="p5sketches.html" class="igloo"
+style="position: absolute; bottom: 20vh; left: 150vw;"></a> 
+
+<a href="room4.html" class="igloo"
+style="position: absolute; bottom: 20vh; left: 200vw;"></a> 
+
+<a href="room5.html" class="igloo"
+style="position: absolute; bottom: 20vh; left: 250vw;"></a> 
+
+
+<img src="img/IMG_1300.png" alt="penguin" width="250vh" 
+  style="position:fixed; bottom: 20vh; left: 15vw;">
+
+</div>
+
+<div class="ice"
+style="
+position: absolute;
+bottom: 15vh;">
+</div>
+
+<div class="water"
+style="
+position: absolute;
+bottom: 0vh;">
+
+</div>
+
+
+</body> 
+</html>

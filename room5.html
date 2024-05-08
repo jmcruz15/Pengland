@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1,">
+
+<title>Week 7-9</title>
+    <link rel="stylesheet" href="css/main.css">
+
+    
+</head>
+
+<body>
+  <style>
+   body{
+  cursor: url(img/IMG_1305.png), auto;
+  margin: 0%;
+overflow-x: hidden ;
+  background-color:#deeff5
+}
+
+@font-face {
+  font-family: pingsan;
+  src: url(Pingsan.ttf);
+}
+
+@font-face {
+  font-family: nohemi;
+  src: url(fonts/Nohemi-Regular-BF6438cc4d0e493.ttf);
+} 
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;}
+
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  transition: 0.25s ease;
+  cursor: zoom-in;
+}
+.column img:hover {
+  transform: scale(0.8);}
+
+
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+   </style>
+<a href="index.html"><p style="color: #7394c9; font-size: large; font-family: pingsan; position: absolute; left: 5vw; top: 5vw;">Pengland</p>
+  </a>
+<h1 style="text-align: center; font-size: 8vw; color: #7394c9; font-family: pingsan ;margin-top: 20px; margin-bottom: 5px;" >
+    Week 7-9
+  </h1>
+  <div class="row">
+    <div class="column">
+    <a href="\img\W7_W9\IMG_3503.jpg">
+        <img src="\img\W7_W9\IMG_3503.jpg" ></a>
+    <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+        Class activity - we had to guess the name and function of different arduino components. Some of them were quite straightforward and some I knew from building RC cars like the servo and the motor.
+    </p>
+    <a href="\img\W7_W9\IMG_3506.jpg">
+      <img src="\img\W7_W9\IMG_3506.jpg"></a>
+    <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+        Class activity - first ardunio circuit that we made was making an LED light up using a button. 
+    </p>
+    <a href="\video\IMG_3508.MOV">
+        <video width="100%" autoplay loop muted src="\video\IMG_3508.MOV"> </a>
+    <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+        Taking it a step further we added another LED and changed the code so that the red and blue LEDs would light up alternatively.
+    </p>
+    <a href="\video\IMG_3560.MOV"> 
+        <video width="100%" autoplay loop muted src="\video\IMG_3560.MOV"></a>  
+    <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+        Experimenting with another basic circuit to better understand how the power works using a motor and a fan.
+    </p>
+     <a href="\img\W7_W9\IMG_3557.jpg"> 
+        <img src="\img\W7_W9\IMG_3557.jpg"></a>  
+    <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+        I used the same principles as the first LED practice and used a button to turn it on and off.
+    </p>
+    </div>   
+
+    <div class="column">
+        <a href="\img\W7_W9\IMG_3562.jpg"> 
+            <img src="\img\W7_W9\IMG_3562.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            I tried creating the LED matrix on my own which I found very challenging as I got the light working but the potentiometer I tried to use did not change the LED matrix.
+        </p>
+          <a href="\img\W7_W9\IMG_3579.jpg"> 
+            <img src="\img\W7_W9\IMG_3579.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            Class activity - We tried a circuit which lit up an LED using touch. Our ground value was apparently quite high, hence we had to be touching the laptop for the LED to light up. We then lowered the value to a lower value which worked better and tried 0 which just kept the LED on the whole time.
+        </p>
+        <a href="\video\IMG_3581.MOV"> 
+            <video width="100%" autoplay loop muted src="\video\IMG_3581.MOV"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            Class activity - We made another circuit using a servo and a photosensor where the servo would move when the photosensor is blocked.
+        </p>
+        <a href="\video\IMG_3659.MOV"> 
+            <video width="100%" autoplay loop muted src="\video\IMG_3659.MOV"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            Using the same principles as the photosensor circuit, I tried using an ultrasonic sensor instead to move the servo, which I will use for my final project. I played around with the circuit so that I wouldn't need a breadboard as this would be too big to place in my final project.
+        </p>
+        <a href="\video\IMG_3648.MOV"> 
+            <video width="100%" autoplay loop muted src="\video\IMG_3648.MOV"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            I also experimented with a distance sensor using the ultrasonic sensor, buzzer and LED lights where the close you get to the sensor the buzzer beeps louder and louder and the LED lights light up from green to red. I could also implement this on my final project by using it as an empty/full sensor.
+        </p>
+    </div>
+
+    <div class="column">
+        <a href="https://www.youtube.com/watch?v=A8ej6FyNkq4"> 
+            <img src="\img\W7_W9\Baby Alive My Real Baby.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            I remember these dolls when I was a kid and it was one of my dream toys then. It is essentially a baby doll that reacts to your touch, talks and requires to be taken care of like it asks to be fed and given water and then you would have to clean its diaper. This was probably one of the first interactive toys I had and quite sentimental for me.
+        </p>
+          <a href="https://playactivate.com/v"> 
+            <img src="\img\W7_W9\choose-your-adventure.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            I found this interactive indoor game on tiktok, but apparently it is in Canada. The video I saw was of their floor is lave game, where you had to avoid the red squares, tap on the blue squares to complete the level and you were only allowed to stay on the green squares. I thought it was cool, as they were able to make what is essentially just an empty, plain room so interactive with just lights and sensors. They also have other games in the facility which can be seen in their website.
+        </p>
+        <a href="https://www.apple.com/au/shop/product/MX2D3ZA/A/apple-pencil-pro"> 
+            <img src="\img\W7_W9\MX2D3.jpeg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            This is the newly released apple pencil pro, which has enhanced interactivity within the pencil where you are given more pencil options by just squeezing the pencil unlike the previous one where you had to tap it. Shaped brushes are also able to rotate when you rotate the pencil. I found that very interesting as I am not able to grasp how the rotation of the pencil can be detected and they are able to fit all its functions in such a small thin case.
+        </p>
+        
+        <a href="https://www.youtube.com/watch?v=xQLb_uwWzj8"> 
+            <img src="\img\W7_W9\nike-mag-2015.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            These are the infamous Nike Mag which is a self-lacing shoe made by Nike. It apparently detects the weight of the person and has motors which tighten the shoe. However, it also has buttons if you want to loosen or tighten it more. I liked how the shoe instantly becomes customised for the person who is wearing it. 
+        </p>
+    </div>
+ 
+    <div class="column">
+        <a href="https://mygamesroom.com.au/product/shop/arcade-machines/upright-arcade-machines/pacman-classic/"> 
+            <img src="\img\W7_W9\pac-inset.png"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            Probably one of the most iconic interactive arcade games. I like how the principle of the game is so simple yet people got so hooked on it and you can just play hours on it.
+        </p>
+          <a href="https://www.youtube.com/watch?v=bZy79k9yDig"> 
+            <img src="\img\W7_W9\s-l1600-1.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            I also remember playing with this when I was young, its also a simple game design but it gets so intense and really works you up the longer you play it.
+        </p>
+        <a href="https://www.youtube.com/watch?v=fRw3mfdiMFU&t=17s"> 
+            <img src="\img\W7_W9\Screenshot 2024-05-08 130940.png"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            I saw a review of this a few years ago and I thought it was an interesting design for a piggy bank but also there was just something about its little beady eyes and the way it chews and eats the coin with the skin like silicone texture moving, there was just something off putting about it.
+        </p>
+        <a href="https://nanoleaf.me/en-AU/products/nanoleaf-shapes/?category=mini-triangles&pack=smarter-kit&size=9"> 
+            <img src="\img\W7_W9\191112162636-1-underscored-nanoleaf-light-panels-review.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            These are nanoleaf lights which reacts to touch where you can change its brightness, turn it on/off, colour scene and also play different games. You can also have the lights react to sound. I had bought myself these lights and I like the turn on/off feature as it was quite convenient instead of looking for a remote or using a button.
+        </p>
+    <a href="https://dasai.com.au/pages/meet-mochi"> 
+            <img src="\img\W7_W9\dasaimochiheader-1024x683.jpg"></a>  
+        <p style="font-family: nohemi; font-size: 2vh; color: #7394c9; margin: 1vh;">
+            This pet robot is specifically to be placed inside your car and it reacts to your driving and has cute little facial expressions. I would like to create something like this for my final project especially with the cute expressions.
+        </p>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+</html>
